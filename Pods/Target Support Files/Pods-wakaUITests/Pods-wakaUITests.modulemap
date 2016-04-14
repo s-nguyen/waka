@@ -1,0 +1,6 @@
+framework module Pods_wakaUITests {
+  umbrella header "Pods-wakaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

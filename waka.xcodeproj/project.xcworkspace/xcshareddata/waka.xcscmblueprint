@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "fcd91762-81a9-4844-bf26-3bcc79886f0e++3365",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++3365" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++3365" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AE8D42D6-6BB1-4D4E-A91E-94F6452260A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++3365" : "sg\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "waka",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ProjectSrc\/Beta\/waka.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.engr.arizona.edu\/svn\/jms\/ece473-573-2016S",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fcd91762-81a9-4844-bf26-3bcc79886f0e++3365"
+    }
+  ]
+}
