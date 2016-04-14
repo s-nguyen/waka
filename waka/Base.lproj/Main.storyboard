@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E88-Ls-R5v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E88-Ls-R5v">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -72,27 +73,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n8b-Ve-iwC">
-                                <rect key="frame" x="168" y="569" width="89" height="2"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="89" id="ffC-zp-fyJ"/>
-                                    <constraint firstAttribute="width" constant="89" id="hog-kT-EfU"/>
-                                    <constraint firstAttribute="height" constant="2" id="lav-bQ-yB7"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="hog-kT-EfU"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <exclude reference="ffC-zp-fyJ"/>
-                                        <include reference="hog-kT-EfU"/>
-                                        <exclude reference="lav-bQ-yB7"/>
-                                    </mask>
-                                </variation>
-                            </progressView>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-30 D Flat" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scA-b4-IY9">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A note" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scA-b4-IY9">
                                 <rect key="frame" x="160" y="361" width="104" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="104" id="GnX-TQ-F6Q"/>
@@ -118,19 +99,88 @@
                                     <constraint firstAttribute="width" constant="208" id="kBN-pK-wbT"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sharp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz7-72-sMg">
+                                <rect key="frame" x="325" y="571" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="niZ-dw-vgj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8b-Ve-iwC">
+                                <rect key="frame" x="222" y="581" width="89" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="ffC-zp-fyJ"/>
+                                    <constraint firstAttribute="width" constant="89" id="hog-kT-EfU"/>
+                                    <constraint firstAttribute="height" constant="2" id="lav-bQ-yB7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hog-kT-EfU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="ffC-zp-fyJ"/>
+                                        <include reference="hog-kT-EfU"/>
+                                        <exclude reference="lav-bQ-yB7"/>
+                                    </mask>
+                                </variation>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Flat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJd-ld-ReR">
+                                <rect key="frame" x="77" y="570" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhi-kP-xIh">
+                                <rect key="frame" x="114" y="581" width="89" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="Bgj-TL-4SP"/>
+                                    <constraint firstAttribute="width" constant="89" id="L2b-9J-6j8"/>
+                                    <constraint firstAttribute="height" constant="2" id="WIL-tS-bEF"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Bgj-TL-4SP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Bgj-TL-4SP"/>
+                                        <exclude reference="L2b-9J-6j8"/>
+                                        <exclude reference="WIL-tS-bEF"/>
+                                    </mask>
+                                </variation>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cU0-hk-Au7" firstAttribute="top" secondItem="vJd-ld-ReR" secondAttribute="bottom" constant="96" id="4NH-AL-PQ1"/>
+                            <constraint firstItem="Vz7-72-sMg" firstAttribute="centerY" secondItem="n8b-Ve-iwC" secondAttribute="centerY" id="7lx-ek-wPt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vz7-72-sMg" secondAttribute="trailing" constant="27" id="AcD-Rb-ZpY"/>
+                            <constraint firstItem="Hhi-kP-xIh" firstAttribute="leading" secondItem="vJd-ld-ReR" secondAttribute="trailing" constant="8" symbolic="YES" id="B1u-02-ose"/>
                             <constraint firstItem="biT-QE-DwE" firstAttribute="top" secondItem="1fe-eP-sSt" secondAttribute="bottom" id="Mep-lQ-dis"/>
+                            <constraint firstItem="cU0-hk-Au7" firstAttribute="top" secondItem="Vz7-72-sMg" secondAttribute="bottom" constant="95" id="Peh-hq-Fe9"/>
                             <constraint firstItem="biT-QE-DwE" firstAttribute="centerX" secondItem="Z7E-b6-dzX" secondAttribute="centerX" id="UcG-cm-hti"/>
                             <constraint firstItem="scA-b4-IY9" firstAttribute="centerX" secondItem="Z7E-b6-dzX" secondAttribute="centerX" constant="5" id="aV2-uD-1g1"/>
+                            <constraint firstItem="Hhi-kP-xIh" firstAttribute="leading" secondItem="Z7E-b6-dzX" secondAttribute="leadingMargin" constant="94" id="eDC-xW-dha"/>
                             <constraint firstItem="n8b-Ve-iwC" firstAttribute="centerX" secondItem="Z7E-b6-dzX" secondAttribute="centerX" constant="5.5" id="fTH-fy-VmA"/>
+                            <constraint firstItem="Hhi-kP-xIh" firstAttribute="top" secondItem="n8b-Ve-iwC" secondAttribute="top" id="kcx-aA-DZ6"/>
                             <constraint firstItem="cU0-hk-Au7" firstAttribute="top" secondItem="n8b-Ve-iwC" secondAttribute="bottom" constant="116" id="nYw-bR-jS2"/>
                             <constraint firstItem="scA-b4-IY9" firstAttribute="top" secondItem="biT-QE-DwE" secondAttribute="bottom" constant="63" id="pJd-Uj-82e"/>
+                            <constraint firstItem="vJd-ld-ReR" firstAttribute="leading" secondItem="Z7E-b6-dzX" secondAttribute="leadingMargin" constant="57" id="s8l-r4-0hF"/>
+                            <constraint firstItem="vJd-ld-ReR" firstAttribute="firstBaseline" secondItem="Vz7-72-sMg" secondAttribute="firstBaseline" id="yd2-cz-cP4"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tuner" id="ZLo-D0-0vQ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="flatBar" destination="Hhi-kP-xIh" id="WrD-8C-g7d"/>
+                        <outlet property="sharpBar" destination="n8b-Ve-iwC" id="GCu-ij-jpk"/>
+                        <outlet property="tunerLabel" destination="scA-b4-IY9" id="u2e-Be-B2y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLQ-WI-Txa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

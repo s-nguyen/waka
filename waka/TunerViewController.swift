@@ -10,16 +10,29 @@ import UIKit
 import TuningFork
 
 
+
 class TunerViewController: UIViewController, TunerDelegate {
     
     private var wakaTuner: Tuner?
     private var running = false
+    @IBOutlet weak var tunerLabel: UITextField!
+    @IBOutlet weak var sharpBar: UIProgressView!
+    @IBOutlet weak var flatBar: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //reverse the progress bar direction
+        var transform = CGAffineTransform()
+        transform = CGAffineTransformMake(1, 0, 0, -1, 0, flatBar.frame.size.height)
+        transform = CGAffineTransformRotate(transform, 3.14)
+        flatBar.transform = transform
+        //CGAffineTransform transform = CGAffineTransformMake(1, 0, 0, -1, 0, flatBar.frame.size.height)
+        
+        //setup tuner
         wakaTuner = Tuner()
         wakaTuner?.delegate = self
-        // Do any additional setup after loading the view.
+        wakaTunerStart()
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,14 +64,32 @@ class TunerViewController: UIViewController, TunerDelegate {
     
     func tunerDidUpdate(wakaTuner: Tuner, output: TunerOutput) {
         //Get Data from here. output.sutff
-        if output.amplitude < 0.005 {
+        var cents : Float
+        if output.amplitude < 0.010 {
             //When no sound from instrument is detected
+            cents = 0
+            flatBar.progress = 0
+            sharpBar.progress = 0
         }
         else {
+            let desiredFrequency = output.frequency - output.distance
+            print(desiredFrequency)
+            cents = 1200*log2(output.frequency/desiredFrequency)
             //When sound is detected
-            //example
-            //UILabel.Text = output.pitch
-            //UILabel.Text = "\(output.frequency)"
+            tunerLabel.text = output.pitch
+            
+            //update right status bar based on the distance between the base frequency and the mic frequency
+            
+            if(output.distance > 0){
+                //first find the difference in cents from the desired frequency
+                //then scale based on 50 to fit progress bar
+                sharpBar.progress = abs(cents)/50
+                flatBar.progress = 0
+            }
+            else if(output.distance < 0){
+                flatBar.progress = abs(cents)/50
+                sharpBar.progress = 0
+            }
         }
     }
 
