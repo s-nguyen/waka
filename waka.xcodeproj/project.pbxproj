@@ -274,7 +274,7 @@
 				TargetAttributes = {
 					33CE12241C7EAD2C00851E44 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 2W7LJ5Z3WC;
+						DevelopmentTeam = D2V5RTB8M7;
 					};
 					33CE12381C7EAD2C00851E44 = {
 						CreatedOnToolsVersion = 7.2;
@@ -625,7 +625,7 @@
 				INFOPLIST_FILE = waka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Wellmet.wakaV2beta;
+				PRODUCT_BUNDLE_IDENTIFIER = Uxi.waka.beta.v0.3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -644,7 +644,7 @@
 				INFOPLIST_FILE = waka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Wellmet.wakaV2beta;
+				PRODUCT_BUNDLE_IDENTIFIER = Uxi.waka.beta.v0.3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
