@@ -73,8 +73,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A note" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scA-b4-IY9">
-                                <rect key="frame" x="160" y="361" width="104" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scA-b4-IY9">
+                                <rect key="frame" x="155" y="360" width="104" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="104" id="GnX-TQ-F6Q"/>
                                     <constraint firstAttribute="width" constant="104" id="dRV-bD-7qN"/>
@@ -100,7 +100,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sharp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz7-72-sMg">
-                                <rect key="frame" x="325" y="571" width="42" height="21"/>
+                                <rect key="frame" x="323" y="423" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="niZ-dw-vgj"/>
                                 </constraints>
@@ -109,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8b-Ve-iwC">
-                                <rect key="frame" x="222" y="581" width="89" height="2"/>
+                                <rect key="frame" x="220" y="433" width="89" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="89" id="ffC-zp-fyJ"/>
                                     <constraint firstAttribute="width" constant="89" id="hog-kT-EfU"/>
@@ -129,13 +129,13 @@
                                 </variation>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Flat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJd-ld-ReR">
-                                <rect key="frame" x="77" y="570" width="29" height="21"/>
+                                <rect key="frame" x="75" y="422" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhi-kP-xIh">
-                                <rect key="frame" x="114" y="581" width="89" height="2"/>
+                                <rect key="frame" x="112" y="433" width="89" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="89" id="Bgj-TL-4SP"/>
                                     <constraint firstAttribute="width" constant="89" id="L2b-9J-6j8"/>
@@ -154,6 +154,25 @@
                                     </mask>
                                 </variation>
                             </progressView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="1" maxValue="36" translatesAutoresizingMaskIntoConstraints="NO" id="Vgp-eF-ZkV">
+                                <rect key="frame" x="93" y="501" width="220" height="31"/>
+                                <connections>
+                                    <action selector="sliderChange:" destination="VLd-Yh-qOi" eventType="valueChanged" id="Zva-lq-DbT"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvN-K3-UdV">
+                                <rect key="frame" x="184" y="479" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-6u-GL9">
+                                <rect key="frame" x="184" y="544" width="46" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="tunePressed:" destination="VLd-Yh-qOi" eventType="touchUpInside" id="cCK-RO-SaK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -179,6 +198,9 @@
                     <connections>
                         <outlet property="flatBar" destination="Hhi-kP-xIh" id="WrD-8C-g7d"/>
                         <outlet property="sharpBar" destination="n8b-Ve-iwC" id="GCu-ij-jpk"/>
+                        <outlet property="toneButton" destination="L5C-6u-GL9" id="Y3I-bf-YHp"/>
+                        <outlet property="toneLabel" destination="rvN-K3-UdV" id="6fT-sR-6fM"/>
+                        <outlet property="toneSlider" destination="Vgp-eF-ZkV" id="WnU-BJ-AYg"/>
                         <outlet property="tunerLabel" destination="scA-b4-IY9" id="u2e-Be-B2y"/>
                     </connections>
                 </viewController>
