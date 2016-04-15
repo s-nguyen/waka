@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import AudioKit
+
 
 
 
 
 class TunerViewController: UIViewController, TunerDelegate {
-    
+    //private var wakaOrch = AKOrchestra()
+    private var wakaAudio = AKInstrument()
+    private var wakaGen = AKOscillator()
     private var wakaTuner: Tuner?
     private var running = false
     private var generating = false
-    private var wakaAudio = ToneGenerator()
+
     private var timer = NSTimer()
     private var genFreq = Float(0)
     private let tones: [Float] = [
@@ -52,6 +56,13 @@ class TunerViewController: UIViewController, TunerDelegate {
         wakaTuner = Tuner()
         wakaTuner?.delegate = self
         wakaTunerStart()
+
+        //setup sound generator
+        wakaGen.amplitude.value = 0.5
+        wakaGen.frequency.value = 440
+        wakaAudio.setAudioOutput(wakaGen)
+        AKOrchestra.addInstrument(wakaAudio)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -113,7 +124,10 @@ class TunerViewController: UIViewController, TunerDelegate {
             wakaTunerStop()
             generating = true
             genFreq = tones[Int(toneSlider.value)-1]
-            //wakaAudio.setFrequency(genFreq)
+            wakaGen.frequency.value = genFreq
+            wakaAudio.restart()
+            AKOrchestra.updateInstrument(wakaAudio)
+            wakaAudio.play()
             
             //display pitch in text field
             tunerLabel.text = pitches[Int(toneSlider.value)-1]
@@ -121,7 +135,8 @@ class TunerViewController: UIViewController, TunerDelegate {
             //change play to stop
             toneButton.setTitle("Stop", forState: UIControlState.Normal)
             
-            wakaAudio.start()
+            //disable slider
+            toneSlider.enabled = false
         }
         else{
             //stop generating and start tuner
@@ -129,6 +144,7 @@ class TunerViewController: UIViewController, TunerDelegate {
             tunerLabel.text = ""
             generating = false
             toneButton.setTitle("Play", forState: UIControlState.Normal)
+            toneSlider.enabled = true
             wakaTunerStart()
         }
     }
@@ -142,10 +158,7 @@ class TunerViewController: UIViewController, TunerDelegate {
         
         //display tone in tone label
         toneLabel.text = pitches[Int(toneSlider.value)-1]
-        
-        //give generator new frequency
-        wakaAudio.setFrequency(tones[Int(toneSlider.value)-1])
-        
+
         //set timer for 1 second
         timer = NSTimer.scheduledTimerWithTimeInterval(0.6, target: self, selector: #selector(timerUpdate), userInfo: nil, repeats: false)
     }

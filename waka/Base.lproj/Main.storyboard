@@ -154,16 +154,10 @@
                                     </mask>
                                 </variation>
                             </progressView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="1" maxValue="36" translatesAutoresizingMaskIntoConstraints="NO" id="Vgp-eF-ZkV">
-                                <rect key="frame" x="93" y="501" width="220" height="31"/>
-                                <connections>
-                                    <action selector="sliderChange:" destination="VLd-Yh-qOi" eventType="valueChanged" id="Zva-lq-DbT"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvN-K3-UdV">
-                                <rect key="frame" x="184" y="479" width="50" height="21"/>
+                                <rect key="frame" x="167" y="480" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-6u-GL9">
@@ -173,6 +167,12 @@
                                     <action selector="tunePressed:" destination="VLd-Yh-qOi" eventType="touchUpInside" id="cCK-RO-SaK"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minValue="1" maxValue="36" translatesAutoresizingMaskIntoConstraints="NO" id="Vgp-eF-ZkV">
+                                <rect key="frame" x="56" y="506" width="303" height="31"/>
+                                <connections>
+                                    <action selector="sliderChange:" destination="VLd-Yh-qOi" eventType="valueChanged" id="Zva-lq-DbT"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
