@@ -24,21 +24,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-wakaTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-wakaUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>TuningFork.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -52,27 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>518F973E5DEC3F40F49091EC66FA4D68</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5996F2725E25A31D3D6E490DA971FB2A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7FE261454CE6FCAE5FA3F0078A428FB9</key>
+		<key>8114689B50637B1570F2C2D1567F7D6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C55E46AC6A1E70A6AA25E306AE545375</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E6B5F776A1A3048CDED8EA498B65035B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A57548AFFB1B38ACE7ADE1FC'
+               BlueprintIdentifier = 'E6AF1C43DC1F629DF394FFEE'
                BlueprintName = 'Chronos-Swift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Chronos.framework'>

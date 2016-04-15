@@ -87,11 +87,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-waka/AudioKit.framework"
   install_framework "Pods-waka/Chronos.framework"
   install_framework "Pods-waka/PermissionScope.framework"
-  install_framework "Pods-waka/TuningFork.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-waka/AudioKit.framework"
   install_framework "Pods-waka/Chronos.framework"
   install_framework "Pods-waka/PermissionScope.framework"
-  install_framework "Pods-waka/TuningFork.framework"
 fi

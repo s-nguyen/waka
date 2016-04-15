@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '48679DB337D8ACBB4689E1ED'
+               BlueprintIdentifier = 'B8E9667C6EBA6B58DCE5157B'
                BlueprintName = 'AudioKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'AudioKit.framework'>
