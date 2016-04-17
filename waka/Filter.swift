@@ -13,8 +13,20 @@ import AVKit
 class Filter {
     //vars
     var recording = false;
+    var playing = false;
     var audioRecorder : AVAudioRecorder!
+    var audioPlayer : AVAudioPlayer!
+    var audioEngine: AVAudioEngine!
+    var audioFile: AVAudioFile!
+    var audioEffector: AVAudioUnit!
+    
+    var volume:Float = 3.0
+    var speed:Float = 1.0
+    var pitch:Float = 0.0
+    
     var currentFilePath = ""
+    var filterNum = 0
+    
     
     //methods
     func startRecord(){
@@ -64,4 +76,109 @@ class Filter {
     func stopRecord(){
         self.audioRecorder.stop()
     }
+    
+    func startPlaying(){
+        
+        //var error: NSError?
+        
+        //get documnets directory
+        let documentsDirectory : NSString = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first!
+        let fullPath = documentsDirectory.stringByAppendingPathComponent("voiceRecording.caf")
+        let url = NSURL.fileURLWithPath(fullPath)
+
+        
+        try! self.audioPlayer = AVAudioPlayer(contentsOfURL: url)
+        audioFile = try? AVAudioFile(forReading: url)
+        
+        /*
+        //set enable to change audio speed
+        audioPlayer.enableRate = true
+        
+        audioPlayer.volume = self.volume
+        audioPlayer.rate = self.speed
+        */
+        audioEngine = AVAudioEngine()
+        
+        //reset
+        self.stopPlaying()
+        
+        let audioPlayerNode = AVAudioPlayerNode()
+        audioEngine.attachNode(audioPlayerNode)
+        let changePitchEffect = AVAudioUnitTimePitch()
+        
+        
+        //apply speed
+        changePitchEffect.rate = self.speed
+        
+        //apply pitch
+        
+        if(self.pitch==0){
+            changePitchEffect.pitch=1;
+        }else{
+            changePitchEffect.pitch = self.pitch*1200
+        }
+        
+        
+        
+        audioEngine.attachNode(changePitchEffect)
+        audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
+        
+        //apply filter
+        if(filterNum==1){
+            let echoEffect = AVAudioUnitDelay()
+            echoEffect.delayTime=1.2
+            echoEffect.feedback=20
+            
+            
+            audioEngine.attachNode(echoEffect)
+            audioEngine.connect(changePitchEffect, to: echoEffect, format: nil)
+            audioEngine.connect(echoEffect, to: audioEngine.outputNode, format: nil)
+            
+        }else if(filterNum==2){
+            let reverbEffect = AVAudioUnitReverb()
+            
+            reverbEffect.loadFactoryPreset(.LargeRoom2)
+            reverbEffect.wetDryMix=80
+            
+            audioEngine.attachNode(reverbEffect)
+            audioEngine.connect(changePitchEffect, to:reverbEffect, format: nil)
+            audioEngine.connect(reverbEffect, to: audioEngine.outputNode, format: nil)
+            
+        }else{
+            //no effect
+            audioEngine.connect(changePitchEffect, to: audioEngine.outputNode, format: nil)
+        }
+        
+
+        
+        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+        
+        do {
+            try audioEngine.start()
+        } catch _ {
+            print("Error")
+        }
+        
+        audioPlayerNode.play()
+        
+        
+        
+        //audioPlayer.prepareToPlay()
+        //audioPlayer.play()
+ 
+    }
+    
+    func stopPlaying(){
+       // audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+    }
+    
+    
+    func applyFilter(){
+        //apply filter method..
+    }
+    
+    
+    
 }
