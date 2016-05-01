@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331B79CA1CD5EBD4003D2184 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331B79C91CD5EBD4003D2184 /* Metronome.swift */; };
+		331B79CB1CD5EBD4003D2184 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331B79C91CD5EBD4003D2184 /* Metronome.swift */; };
 		332737D01C9149DB00111D14 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332737CF1C9149DB00111D14 /* Filter.swift */; };
 		332737D11C9149DB00111D14 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332737CF1C9149DB00111D14 /* Filter.swift */; };
 		33CE12291C7EAD2C00851E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE12281C7EAD2C00851E44 /* AppDelegate.swift */; };
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		331B79C91CD5EBD4003D2184 /* Metronome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
 		332737CF1C9149DB00111D14 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = waka/Filter.swift; sourceTree = "<group>"; };
 		33CE12251C7EAD2C00851E44 /* waka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CE12281C7EAD2C00851E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +197,7 @@
 				D645E7001CC0B0F5006E806F /* ToneGenerator.swift */,
 				332737CF1C9149DB00111D14 /* Filter.swift */,
 				D687D7B71CC0CAAF00745DB4 /* TunerCore.swift */,
+				331B79C91CD5EBD4003D2184 /* Metronome.swift */,
 			);
 			name = AudioProcessers;
 			sourceTree = "<group>";
@@ -466,6 +470,7 @@
 				33CE122B1C7EAD2C00851E44 /* ViewController.swift in Sources */,
 				D6880E921C91266600CBBCEC /* TunerViewController.swift in Sources */,
 				D6880E8E1C91263600CBBCEC /* TabBarController.swift in Sources */,
+				331B79CA1CD5EBD4003D2184 /* Metronome.swift in Sources */,
 				D67B71601C9007290095C767 /* AboutMeViewController.swift in Sources */,
 				33CE12291C7EAD2C00851E44 /* AppDelegate.swift in Sources */,
 				332737D01C9149DB00111D14 /* Filter.swift in Sources */,
@@ -480,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331B79CB1CD5EBD4003D2184 /* Metronome.swift in Sources */,
 				33CE123E1C7EAD2C00851E44 /* wakaTests.swift in Sources */,
 				332737D11C9149DB00111D14 /* Filter.swift in Sources */,
 			);

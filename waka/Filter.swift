@@ -179,6 +179,7 @@ class Filter {
         //apply filter method..
     }
     
-    
-    
+    func save(){
+        
+    }
 }
