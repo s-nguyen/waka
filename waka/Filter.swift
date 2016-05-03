@@ -175,11 +175,4 @@ class Filter {
     }
     
     
-    func applyFilter(){
-        //apply filter method..
-    }
-    
-    func save(){
-        
-    }
 }

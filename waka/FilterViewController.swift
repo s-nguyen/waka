@@ -18,7 +18,6 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var emailButton: UIButton!
     
     @IBOutlet weak var speedLabel: UILabel!
-    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var pitchLabel: UILabel!
     
     @IBOutlet weak var pickerView: UIPickerView! //IBOutlet for pickerView
@@ -43,7 +42,6 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         self.pickerView.delegate = self;
         
         self.playButton.enabled = false;
-        self.saveButton.enabled = false;
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,7 +80,6 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             filter.stopRecord()
             recordButton.setTitle("Re-Record", forState: .Normal)
             
-            saveButton.enabled = true
             playButton.enabled = true
         }
         else{
@@ -90,7 +87,6 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             filter.startRecord()
             recordButton.setTitle("Done", forState: .Normal)
             
-            saveButton.enabled = false
             playButton.enabled = false
         }
     }
@@ -102,7 +98,6 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             playButton.setTitle("Play", forState: .Normal)
             
             recordButton.enabled = true
-            saveButton.enabled = true
             
         }else{
             filter.playing = !filter.playing
@@ -110,7 +105,6 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             playButton.setTitle("Stop", forState: .Normal)
             
             recordButton.enabled = false
-            saveButton.enabled = false
         }
         
     }
@@ -139,16 +133,6 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         filter.pitch = Float(sender.value)
     }
     
-    @IBAction func savePressed(sender: UIButton) {
-        if(filter.filterNum==0){
-            self.view.backgroundColor = UIColor.redColor()
-        }else if(filter.filterNum==1){
-            self.view.backgroundColor = UIColor.blueColor()
-        }else{
-            self.view.backgroundColor = UIColor.greenColor()
-        }
-        
-    }
     
     @IBAction func emailPressed(sender: UIButton) {
         let emailer = MFMailComposeViewController()
