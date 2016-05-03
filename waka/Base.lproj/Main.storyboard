@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E88-Ls-R5v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E88-Ls-R5v">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -425,16 +425,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="0.5" maximumValue="2" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3qZ-qS-WiW">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="speedStepper" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="0.5" maximumValue="2" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3qZ-qS-WiW">
                                 <rect key="frame" x="87" y="510" width="94" height="29"/>
                                 <connections>
                                     <action selector="speedPressed:" destination="BSp-Hb-fCe" eventType="valueChanged" id="tNx-We-Ymu"/>
-                                </connections>
-                            </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-2" maximumValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="YCO-Yb-a9Z">
-                                <rect key="frame" x="229" y="510" width="94" height="29"/>
-                                <connections>
-                                    <action selector="pitchPressed:" destination="BSp-Hb-fCe" eventType="valueChanged" id="sTJ-5v-gV3"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9q-4j-OAt">
@@ -462,7 +456,7 @@
                                     <action selector="emailPressed:" destination="BSp-Hb-fCe" eventType="touchUpInside" id="R7Y-Sn-1mi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2U-KI-Fig">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2U-KI-Fig">
                                 <rect key="frame" x="157" y="550" width="100" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="YEF-TQ-Jad"/>
@@ -498,18 +492,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gln-85-8kq">
-                                <rect key="frame" x="165" y="359" width="84" height="30"/>
-                                <state key="normal" title="Save"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="pitchStepper" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-2" maximumValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="YCO-Yb-a9Z">
+                                <rect key="frame" x="229" y="510" width="94" height="29"/>
                                 <connections>
-                                    <action selector="savePressed:" destination="BSp-Hb-fCe" eventType="touchUpInside" id="0JZ-EF-1H1"/>
+                                    <action selector="pitchPressed:" destination="BSp-Hb-fCe" eventType="valueChanged" id="sTJ-5v-gV3"/>
                                 </connections>
-                            </button>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="L9q-4j-OAt" firstAttribute="leading" secondItem="WKi-z4-RZn" secondAttribute="leadingMargin" constant="84" id="0mB-Yl-OkS"/>
-                            <constraint firstItem="b2U-KI-Fig" firstAttribute="top" secondItem="Gln-85-8kq" secondAttribute="bottom" constant="161" id="1yD-aP-wvd"/>
                             <constraint firstItem="U3p-TK-niO" firstAttribute="trailing" secondItem="WKi-z4-RZn" secondAttribute="trailingMargin" id="3jv-aO-dd5"/>
                             <constraint firstItem="U3p-TK-niO" firstAttribute="leading" secondItem="jXh-j4-nFz" secondAttribute="trailing" constant="25" id="4dp-Dz-Ymc"/>
                             <constraint firstItem="OeJ-Xo-XTm" firstAttribute="top" secondItem="8xN-W9-wKo" secondAttribute="bottom" constant="8" id="5tN-zB-5GP"/>
@@ -521,7 +513,6 @@
                             <constraint firstItem="6or-9n-DfT" firstAttribute="centerX" secondItem="L9q-4j-OAt" secondAttribute="centerX" id="AZd-Lv-haI"/>
                             <constraint firstItem="6or-9n-DfT" firstAttribute="top" secondItem="L9q-4j-OAt" secondAttribute="bottom" constant="8" id="Arb-QA-FgO"/>
                             <constraint firstItem="jXh-j4-nFz" firstAttribute="leading" secondItem="WKi-z4-RZn" secondAttribute="leadingMargin" constant="72" id="HlF-j2-oJI"/>
-                            <constraint firstItem="Gln-85-8kq" firstAttribute="top" secondItem="jXh-j4-nFz" secondAttribute="bottom" constant="-74" id="L2D-fH-jy9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8xN-W9-wKo" secondAttribute="trailing" constant="97" id="PqN-07-tVF"/>
                             <constraint firstItem="3qZ-qS-WiW" firstAttribute="centerX" secondItem="L9q-4j-OAt" secondAttribute="centerX" id="Ugz-GZ-hqy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jXh-j4-nFz" secondAttribute="trailing" constant="71" id="bWv-5j-bR7"/>
@@ -531,10 +522,8 @@
                             <constraint firstItem="L9q-4j-OAt" firstAttribute="top" secondItem="jXh-j4-nFz" secondAttribute="bottom" constant="8" symbolic="YES" id="hYU-he-X1z"/>
                             <constraint firstItem="YCO-Yb-a9Z" firstAttribute="top" secondItem="OeJ-Xo-XTm" secondAttribute="bottom" constant="16" id="lSk-G5-qB0"/>
                             <constraint firstItem="8xN-W9-wKo" firstAttribute="centerX" secondItem="YCO-Yb-a9Z" secondAttribute="centerX" id="pYi-hZ-KqB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Gln-85-8kq" secondAttribute="trailing" constant="145" id="ry0-Ad-lvW"/>
                             <constraint firstItem="wFt-J2-ssn" firstAttribute="top" secondItem="2xu-gg-LdJ" secondAttribute="bottom" constant="60" id="t12-mt-w8f"/>
                             <constraint firstItem="jXh-j4-nFz" firstAttribute="centerX" secondItem="WKi-z4-RZn" secondAttribute="centerX" id="tih-Tq-sOj"/>
-                            <constraint firstItem="Gln-85-8kq" firstAttribute="leading" secondItem="WKi-z4-RZn" secondAttribute="leadingMargin" constant="145" id="vIa-cm-VhB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2xu-gg-LdJ" secondAttribute="trailing" id="ygW-3e-26m"/>
                         </constraints>
                     </view>
@@ -546,7 +535,6 @@
                         <outlet property="pitchLabel" destination="OeJ-Xo-XTm" id="F8c-8P-BmM"/>
                         <outlet property="playButton" destination="2xu-gg-LdJ" id="5ve-ps-K5D"/>
                         <outlet property="recordButton" destination="b2U-KI-Fig" id="p4L-r7-bBU"/>
-                        <outlet property="saveButton" destination="Gln-85-8kq" id="aKz-tE-JfI"/>
                         <outlet property="speedLabel" destination="6or-9n-DfT" id="NRN-oM-RyQ"/>
                     </connections>
                 </viewController>
