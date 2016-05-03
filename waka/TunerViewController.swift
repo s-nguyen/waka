@@ -121,6 +121,8 @@ class TunerViewController: UIViewController, TunerDelegate {
     @IBAction func tunePressed(sender: AnyObject) {
         if(!generating){
             //play pressed, stop tuner and get send genFreq to engine
+            flatBar.progress = 0
+            sharpBar.progress = 0
             wakaTunerStop()
             generating = true
             genFreq = tones[Int(toneSlider.value)-1]

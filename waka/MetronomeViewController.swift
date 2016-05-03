@@ -10,21 +10,23 @@ import UIKit
 
 
 class MetronomeViewController: UIViewController{
-    var metronome = Metronome()
+    var metronome: Metronome!
     var playing = false
-    @IBOutlet weak var quarterButton: UIButton!
+    @IBOutlet var quarterButton: UIButton!
     @IBOutlet weak var eigthButton: UIButton!
     @IBOutlet weak var sixteenthButton: UIButton!
     @IBOutlet weak var bpmSlider: UISlider!
     @IBOutlet weak var playerButton: UIButton!
     @IBOutlet weak var bpmText: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        metronome.bpm = Double(bpmSlider.value)
+        metronome = Metronome()
+        metronome.bpm = 120 //Double(bpmSlider.value)
         metronome.meter = 1
-        let intBPM = Int(bpmSlider.value)
-        bpmText.text = "\(intBPM)"
+        //let intBPM = 120 //Int(bpmSlider.value)
+        bpmText.text = "120" //"\(intBPM)"
         
         
         // Do any additional setup after loading the view.
@@ -35,7 +37,7 @@ class MetronomeViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
-
+  
     
     @IBAction func quarterPressed(sender: AnyObject) {
         metronome.meter = 1

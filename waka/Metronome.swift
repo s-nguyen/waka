@@ -11,26 +11,33 @@ import AudioKit
 
 class Metronome {
     //meter is 1, 2, or 4.  1 = quarter not, 2 = eigth note, 4 = sixteenth note
-    public var meter = 1
-    public var bpm = Double(1)
-    private var interval : Double
-    private var count = 0
-    private var tambo = AKTambourineInstrument()
-    private var orch = AKOrchestra()
-    private var amp = AKAmplifier()
-    private var timer = NSTimer()
-    private var first = true
+
+    var meter: Int!
+    var bpm: Double!
+    var interval: Double!
+    var count: Int!
+    var tambo: AKTambourineInstrument!
+    var orch: AKOrchestra!
+    var amp: AKAmplifier!
+    var timer: NSTimer!
+    var first: Bool!
     
     init(){
-        orch.addInstrument(tambo)
-        amp = AKAmplifier(input: tambo.output)
-        orch.addInstrument(amp)
-        amp.start()
-        interval = 1
-        meter = 1
-        bpm = 1
-        count = 0
-        first = true
+        
+        self.tambo = AKTambourineInstrument()
+        self.orch = AKOrchestra()
+        self.amp = AKAmplifier()
+        self.timer = NSTimer()
+        self.meter = 1
+        self.bpm = 1.0
+        self.interval = 1
+        self.count = 0
+        self.first = true
+        self.orch.addInstrument(tambo)
+        self.amp = AKAmplifier(input: tambo.output)
+        self.orch.addInstrument(amp)
+        self.amp.start()
+      
     }
     
     func start(){
@@ -51,7 +58,7 @@ class Metronome {
         if(count == 0 ){
             //makes the first note of the meter louder
             amp.amplitude.value = 1.5
-            print("got here")
+        
         }
         
         note.duration.value = Float(interval/1.7)

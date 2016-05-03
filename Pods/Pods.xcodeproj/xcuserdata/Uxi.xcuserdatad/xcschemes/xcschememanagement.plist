@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-wakaTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>2AB0CCF6006D41D8D3EB101C04DCF1C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40A60DA89582979BDC0025B841596815</key>
 		<dict>
 			<key>primary</key>
 			<true/>

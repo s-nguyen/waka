@@ -32,6 +32,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>006CCAF6D3AE715EEF9D07F744EAEE14</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-wakaTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0095B2E7977720FF3C1AB827A91BFAD2</key>
 		<dict>
 			<key>fileRef</key>
@@ -252,6 +265,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>0399A4631C2D5E73F6FBF3B44B1FA939</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>03D4456B80C17FA7C36E5DD8E50509E3</key>
 		<dict>
 			<key>fileRef</key>
@@ -303,6 +329,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>059DB25B8132BAAB80D96DD70428CAFE</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>AudioKit.framework</string>
+			<key>path</key>
+			<string>AudioKit.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>05CCF4EA2307067290D78EA98B14F966</key>
 		<dict>
 			<key>fileRef</key>
@@ -330,6 +371,19 @@
 			<string>F76204F8D8563F7C5C9BC2EB6824CC7B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>0682A44DF8CBF90E6D3D616425B8D6E7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-wakaTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>068C73C0409E9C9B16464748323DBEDD</key>
 		<dict>
@@ -410,6 +464,20 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>07E3AB1D8EE8089ECECD76AF1BEA2521</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C6B1EF4339823FC277D95356799DEF8C</string>
+				<string>FE07856275F8506130D9808892EADBCC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>081AF82A2514C33340BA5D805B5B4DDE</key>
 		<dict>
@@ -677,7 +745,7 @@
 			<key>productName</key>
 			<string>AudioKit</string>
 			<key>productReference</key>
-			<string>27C37E822AED44527DCE0314924551B2</string>
+			<string>059DB25B8132BAAB80D96DD70428CAFE</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -1011,7 +1079,7 @@
 		<key>111DD3E8F6AC3C61C3E915ABDB041070</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>233E74A1D8F8AE97F83A6DE05AAD6323</string>
+			<string>71C9F975988B230920E92D4E4006BFCA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1195,6 +1263,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>136D1349D26E7B1E46B88E7F4CC1BB69</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BF9D3E301B7261673902B8940B35102F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>139D007F68287F1435D32BFCA4861614</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1207,19 +1288,6 @@
 			<string>AKBambooSticks.h</string>
 			<key>path</key>
 			<string>AudioKit/Operations/Signal Generators/Physical Models/PhISEM/AKBambooSticks.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>139FF1A160F3BEC5386BBD86103B27D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-waka-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1273,7 +1341,7 @@
 		<key>1494A2CD33470EF824C14ABC9C4DE5C1</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>60B44E2EA47CB1492249548271BC44D5</string>
+			<string>ECFC9B4731AA5E1779B734AA44F29737</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1914,6 +1982,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>214F0E95730B6AF4712E13D6792143E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-waka-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>21756547A6F3301C2FA5B965C0426AAE</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1943,6 +2024,17 @@
 			<string>AudioKit/Operations/Signal Generators/Loopers/AKMonoSoundFileLooper.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>21E1F1252EEEA9176AE7A90D26860CDD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>PermissionScope</string>
+			<key>target</key>
+			<string>C55E46AC6A1E70A6AA25E306AE545375</string>
+			<key>targetProxy</key>
+			<string>C4682FC1B28F8B9B4E48D24956AFAEAA</string>
 		</dict>
 		<key>229AE170B3254DB47408D14781CCD444</key>
 		<dict>
@@ -1986,19 +2078,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>233E74A1D8F8AE97F83A6DE05AAD6323</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-waka.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>234F5E5E444C41F779F2842845A22546</key>
 		<dict>
 			<key>fileRef</key>
@@ -2019,6 +2098,34 @@
 			<string>4AFCFDC4B5B9D2CA9E5D0E8969019154</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>2395B96ED0AEA9443E7D28A9B4B61960</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-waka-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23DC31DA92D5443CA6B5AAD888E36F0D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_waka.framework</string>
+			<key>path</key>
+			<string>Pods_waka.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>24059E2D1C25849191099854DD396F20</key>
 		<dict>
@@ -2061,22 +2168,6 @@
 			<string>pvfileio.h</string>
 			<key>path</key>
 			<string>AudioKit/Platforms/Common/csound/pvfileio.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>244C43E0BFFB80F12C80809B896FBFCA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>27C37E822AED44527DCE0314924551B2</string>
-				<string>3E43324FC0690D0F6D13DFE1F2B70660</string>
-				<string>8C53EC70C4C50AE55B10CF2AE158270C</string>
-				<string>897AD52AB288D202E29F81AB85C2B5B5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2226,21 +2317,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>27C37E822AED44527DCE0314924551B2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AudioKit.framework</string>
-			<key>path</key>
-			<string>AudioKit.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>28B4565D0626EC0A2DD23809081A4951</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2299,6 +2375,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>2A13E6FF2A097943A4E907B85C58398C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>56739C9030165AE2F5D2C1618FE67A09</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>2A367ACF56F27E90E4BBEE037180357A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2311,19 +2400,6 @@
 			<string>AKFSignal.h</string>
 			<key>path</key>
 			<string>AudioKit/Parameters/AKFSignal.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2A50BF150FFDBAE77584E8781256624B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-waka-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2348,7 +2424,7 @@
 			<key>productName</key>
 			<string>Chronos-Swift</string>
 			<key>productReference</key>
-			<string>3E43324FC0690D0F6D13DFE1F2B70660</string>
+			<string>5C5C38133D06C319B757263036854300</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -2616,6 +2692,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>2ED31D79CA0BFA58F1575BF97BAA9618</key>
+		<dict>
+			<key>fileRef</key>
+			<string>64EC95BFEA287C0651124993CFBCAB07</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>2FAE40569516EE3AA5CE6DA1E75C2B10</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2630,6 +2713,19 @@
 			<string>Chronos/VariableTimer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>30677647C559D9C79ADBA1B98DE2FDD6</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2AB0CCF6006D41D8D3EB101C04DCF1C7</string>
+			<key>remoteInfo</key>
+			<string>Chronos-Swift</string>
 		</dict>
 		<key>309B957213E07ABB9ADBDA92397BD282</key>
 		<dict>
@@ -2681,23 +2777,10 @@
 				</array>
 			</dict>
 		</dict>
-		<key>31481362AB18743D2336D94204CF6543</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>78884479BD43D43A914125D39112EED8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>3155CD56EA134FE6A3B8AF8E11D09D12</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2A50BF150FFDBAE77584E8781256624B</string>
+			<string>DF4322F4A4B224D2346D12D6E693D68F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2784,6 +2867,17 @@
 			<string>AudioKit-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>336D79E9E96A27F87A107C493D1653E3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Chronos-Swift</string>
+			<key>target</key>
+			<string>2AB0CCF6006D41D8D3EB101C04DCF1C7</string>
+			<key>targetProxy</key>
+			<string>30677647C559D9C79ADBA1B98DE2FDD6</string>
 		</dict>
 		<key>33F7DC0184F14732F729FBCD30F889D9</key>
 		<dict>
@@ -3291,21 +3385,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>3E43324FC0690D0F6D13DFE1F2B70660</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Chronos.framework</string>
-			<key>path</key>
-			<string>Chronos.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>3E4E89230EF59BC255123B67864ACF77</key>
 		<dict>
 			<key>isa</key>
@@ -3398,6 +3477,35 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>40A60DA89582979BDC0025B841596815</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>83E66C1C69DDE9B99BAE4F5F08FC03F2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>BD3C61D845A29D444A10574116CFC7A3</string>
+				<string>2A13E6FF2A097943A4E907B85C58398C</string>
+				<string>136D1349D26E7B1E46B88E7F4CC1BB69</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>74F3C1408E2EB07831712A845FAD495C</string>
+				<string>336D79E9E96A27F87A107C493D1653E3</string>
+				<string>21E1F1252EEEA9176AE7A90D26860CDD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-wakaTests</string>
+			<key>productName</key>
+			<string>Pods-wakaTests</string>
+			<key>productReference</key>
+			<string>FE430CD87B52D2FD053CF2149AB59965</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
 		<key>40ADB5860689F30CCCE30525327365EE</key>
 		<dict>
@@ -3996,6 +4104,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>4EB10B11C26BB03489A648C4E5DDBA50</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-waka-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>4ED183BFD8686464401818FDAEFEA756</key>
 		<dict>
 			<key>fileRef</key>
@@ -4111,6 +4232,19 @@
 			<string>18C650EB5864E9B5A28DCAE60E74F30B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>5128E48C65D7481DE62119C28C670BB9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-wakaTests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>51347B2705322E57D4C7F411BBD4D84F</key>
 		<dict>
@@ -4483,6 +4617,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>56739C9030165AE2F5D2C1618FE67A09</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>567F154FEFAA18FB04934B62E87801BA</key>
 		<dict>
 			<key>fileRef</key>
@@ -4803,6 +4944,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>5A9A1CC77745D81F45061F05EB908589</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-waka-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>5AE9857EB3785C4BCF35C89B38D2D566</key>
 		<dict>
 			<key>fileRef</key>
@@ -4897,6 +5051,21 @@
 			<string>AudioKit/Operations/Signal Generators/Oscillators/AKVCOscillator.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C5C38133D06C319B757263036854300</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Chronos.framework</string>
+			<key>path</key>
+			<string>Chronos.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>5C5F76DC9B5C81BAA7509B9C3353500B</key>
 		<dict>
@@ -5292,16 +5461,14 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>60B44E2EA47CB1492249548271BC44D5</key>
+		<key>6109EAF395E11DDF06AB9A04D9101E5B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Pods-waka.release.xcconfig</string>
+			<string>Pods-wakaTests.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -5422,6 +5589,68 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>63D92DB99889ACA70A68A9CE4334D6C2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F98F7ADAD672CE10D52B3BEB3774E80E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-wakaTests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-wakaTests/Pods-wakaTests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_wakaTests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>63F5BE50ECC8202AFECCF3A2DEE58A06</key>
 		<dict>
 			<key>fileRef</key>
@@ -5455,6 +5684,19 @@
 			<string>AKHighPassFilter.m</string>
 			<key>path</key>
 			<string>AudioKit/Operations/Signal Modifiers/Filters/AKHighPassFilter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>64EC95BFEA287C0651124993CFBCAB07</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-wakaTests-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -5493,6 +5735,17 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>65883C475A483A81E5F12773FD07A90F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-waka.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>65F8F8777E5FE257A82C94DA116DEFBD</key>
 		<dict>
@@ -5770,6 +6023,21 @@
 			<string>8690073D649172350259432DB9C5EA16</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>69D6557EDE795642DF2731FD16CEE989</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>PermissionScope.framework</string>
+			<key>path</key>
+			<string>PermissionScope.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>69EB3734FB1E7D79C3ABBC57B4705238</key>
 		<dict>
@@ -6175,6 +6443,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>71C9F975988B230920E92D4E4006BFCA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-waka.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>71F7FC5FB2203931E0FA573C66FBD660</key>
 		<dict>
 			<key>fileRef</key>
@@ -6271,19 +6552,6 @@
 			<string>AKLinearEnvelope.h</string>
 			<key>path</key>
 			<string>AudioKit/Operations/Signal Generators/Envelopes/AKLinearEnvelope.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73C341C213610E0470E7C619B34EBAF5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-waka-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -6417,6 +6685,17 @@
 			<string>6DA0EEDA176FC7E149E02B55F1B77986</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>74F3C1408E2EB07831712A845FAD495C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>AudioKit</string>
+			<key>target</key>
+			<string>0C4798DD7FEBB19BDBADFFBB2F4F8748</string>
+			<key>targetProxy</key>
+			<string>F1458B8813AEFBC614A4A1266C4353FF</string>
 		</dict>
 		<key>7533D23E022B0D66F4115CB904232D2C</key>
 		<dict>
@@ -6662,30 +6941,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>78884479BD43D43A914125D39112EED8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A7AAB89F2122EFF5196A5DCC5E0DC5AA</string>
-				<string>9FA9FF0CF89C0A7D76B209507630DE3E</string>
-				<string>92C73EA266BCB052950B0A509ADADAD7</string>
-				<string>139FF1A160F3BEC5386BBD86103B27D8</string>
-				<string>2A50BF150FFDBAE77584E8781256624B</string>
-				<string>9AF0D68BB0AEB871074A67D0350F3D10</string>
-				<string>9AD52FA13FCC99FFD57E04D5D3004BC9</string>
-				<string>73C341C213610E0470E7C619B34EBAF5</string>
-				<string>233E74A1D8F8AE97F83A6DE05AAD6323</string>
-				<string>60B44E2EA47CB1492249548271BC44D5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-waka</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-waka</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>78B0460715B79AAE548CD8A6D7CEB7DF</key>
 		<dict>
 			<key>fileRef</key>
@@ -6914,6 +7169,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>7DA028A6740882D3CE8627D6F99ECD67</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-wakaTests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
@@ -6921,8 +7189,8 @@
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
 				<string>4EDB0201AD04E04E13FF042DC33F32F1</string>
-				<string>244C43E0BFFB80F12C80809B896FBFCA</string>
-				<string>31481362AB18743D2336D94204CF6543</string>
+				<string>BB89C04ED1D80797DAB59D6E095FD17C</string>
+				<string>07E3AB1D8EE8089ECECD76AF1BEA2521</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -7072,7 +7340,7 @@
 			<key>productName</key>
 			<string>Pods-waka</string>
 			<key>productReference</key>
-			<string>897AD52AB288D202E29F81AB85C2B5B5</string>
+			<string>23DC31DA92D5443CA6B5AAD888E36F0D</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -7148,6 +7416,20 @@
 			<string>7DB62F5630324F02088677B4305A59EA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>83E66C1C69DDE9B99BAE4F5F08FC03F2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FA056CB74B6A51EA4B01C190ACAF9395</string>
+				<string>63D92DB99889ACA70A68A9CE4334D6C2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>8471B86964CA22735D6780D3A53C7D4A</key>
 		<dict>
@@ -7407,21 +7689,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>897AD52AB288D202E29F81AB85C2B5B5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_waka.framework</string>
-			<key>path</key>
-			<string>Pods_waka.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>8A8F066FF90DFCF086377EF6EEA399F9</key>
 		<dict>
 			<key>fileRef</key>
@@ -7559,21 +7826,6 @@
 					<string>Project</string>
 				</array>
 			</dict>
-		</dict>
-		<key>8C53EC70C4C50AE55B10CF2AE158270C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>PermissionScope.framework</string>
-			<key>path</key>
-			<string>PermissionScope.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>8CCEC02F7DD419BC7E0577D278EE710F</key>
 		<dict>
@@ -8324,19 +8576,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>92C73EA266BCB052950B0A509ADADAD7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-waka-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>92E9C8E7B094B3EDB9B3A27BB9B2E0C2</key>
 		<dict>
 			<key>fileRef</key>
@@ -8797,38 +9036,12 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9AD52FA13FCC99FFD57E04D5D3004BC9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-waka-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>9AE73992F69783C77CFC61657114CAE5</key>
 		<dict>
 			<key>fileRef</key>
 			<string>66B9863E52CD34451F0E89B76401267E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AF0D68BB0AEB871074A67D0350F3D10</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-waka-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9AF30754B13EF7F6D0A1E14849C64630</key>
 		<dict>
@@ -9048,17 +9261,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>9FA9FF0CF89C0A7D76B209507630DE3E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-waka.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9FD92BAB943F80FB82B7FA0D790B7A38</key>
 		<dict>
@@ -9758,19 +9960,6 @@
 			<string>AKFFTTableReader.h</string>
 			<key>path</key>
 			<string>AudioKit/Operations/FFT/AKFFTTableReader.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A7AAB89F2122EFF5196A5DCC5E0DC5AA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -10685,6 +10874,23 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>BB89C04ED1D80797DAB59D6E095FD17C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>059DB25B8132BAAB80D96DD70428CAFE</string>
+				<string>5C5C38133D06C319B757263036854300</string>
+				<string>69D6557EDE795642DF2731FD16CEE989</string>
+				<string>23DC31DA92D5443CA6B5AAD888E36F0D</string>
+				<string>FE430CD87B52D2FD053CF2149AB59965</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>BBA2F89DFEE76F6CD53A1FBCE05E414F</key>
 		<dict>
 			<key>fileRef</key>
@@ -10734,6 +10940,19 @@
 			<string>Chronos/RepeatingTimer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BD3C61D845A29D444A10574116CFC7A3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2ED31D79CA0BFA58F1575BF97BAA9618</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>BD42D73F0A2C97F6ABCBDBC6BAB1F2A0</key>
 		<dict>
@@ -10839,6 +11058,20 @@
 			<string>iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF9D3E301B7261673902B8940B35102F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6E159920153DE2FD375AC0905AFABE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>BFF949ABC08A3D8B2BB019ED6DA4B51A</key>
 		<dict>
@@ -11116,6 +11349,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>C4682FC1B28F8B9B4E48D24956AFAEAA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C55E46AC6A1E70A6AA25E306AE545375</string>
+			<key>remoteInfo</key>
+			<string>PermissionScope</string>
 		</dict>
 		<key>C4766A5C0C8FAE906A777B2E8FF01076</key>
 		<dict>
@@ -11416,7 +11662,7 @@
 			<key>productName</key>
 			<string>PermissionScope</string>
 			<key>productReference</key>
-			<string>8C53EC70C4C50AE55B10CF2AE158270C</string>
+			<string>69D6557EDE795642DF2731FD16CEE989</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -11469,6 +11715,43 @@
 			<string>AKPortamento.m</string>
 			<key>path</key>
 			<string>AudioKit/Operations/Signal Generators/Musical Controls/AKPortamento.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B1EF4339823FC277D95356799DEF8C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CBEFADF62D5AEF67FFBB1AAFAB889440</string>
+				<string>65883C475A483A81E5F12773FD07A90F</string>
+				<string>E6D5755BA04D1D8B9DCF6F3F72549AAF</string>
+				<string>5A9A1CC77745D81F45061F05EB908589</string>
+				<string>DF4322F4A4B224D2346D12D6E693D68F</string>
+				<string>214F0E95730B6AF4712E13D6792143E8</string>
+				<string>2395B96ED0AEA9443E7D28A9B4B61960</string>
+				<string>4EB10B11C26BB03489A648C4E5DDBA50</string>
+				<string>71C9F975988B230920E92D4E4006BFCA</string>
+				<string>ECFC9B4731AA5E1779B734AA44F29737</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-waka</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-waka</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6E159920153DE2FD375AC0905AFABE5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-wakaTests-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -11754,6 +12037,19 @@
 			<string>4659F532A1237BEE1E348A07A0792D19</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>CBEFADF62D5AEF67FFBB1AAFAB889440</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>CC9EF06CF2C66590A76FBE1E2377C594</key>
 		<dict>
@@ -12215,7 +12511,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>244C43E0BFFB80F12C80809B896FBFCA</string>
+			<string>BB89C04ED1D80797DAB59D6E095FD17C</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -12228,6 +12524,7 @@
 				<string>2AB0CCF6006D41D8D3EB101C04DCF1C7</string>
 				<string>C55E46AC6A1E70A6AA25E306AE545375</string>
 				<string>8114689B50637B1570F2C2D1567F7D6B</string>
+				<string>40A60DA89582979BDC0025B841596815</string>
 			</array>
 		</dict>
 		<key>D429E8334C3EF6A78A21A4A8D2061560</key>
@@ -12721,6 +13018,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>DF4322F4A4B224D2346D12D6E693D68F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-waka-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>DFC6625D88B16BA1418C8D7CDA4C6D74</key>
 		<dict>
 			<key>fileRef</key>
@@ -12776,7 +13086,7 @@
 		<key>E095CD2BBC4F74EC84BC6CB7545A427D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>73C341C213610E0470E7C619B34EBAF5</string>
+			<string>4EB10B11C26BB03489A648C4E5DDBA50</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -12973,6 +13283,19 @@
 			<string>EZAudioFloatConverter.h</string>
 			<key>path</key>
 			<string>AudioKit/Utilities/Plots/EZAudio/EZAudioFloatConverter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6D5755BA04D1D8B9DCF6F3F72549AAF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-waka-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -13313,6 +13636,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>ECFC9B4731AA5E1779B734AA44F29737</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-waka.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>ED05758F56C36267DA5099827A402D4C</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -13497,6 +13833,19 @@
 			<string>A69387DA6EA321DBC7D9CF1402A5D8A6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>F1458B8813AEFBC614A4A1266C4353FF</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>0C4798DD7FEBB19BDBADFFBB2F4F8748</string>
+			<key>remoteInfo</key>
+			<string>AudioKit</string>
 		</dict>
 		<key>F17C1162A66066E0C464CE0EDFA2F122</key>
 		<dict>
@@ -13791,6 +14140,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>F5DC266AADD5D8CE84CFEEE112458848</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-wakaTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>F5E6B7B0D4F03734AA6329CEB7615C68</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -14002,6 +14364,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>F98F7ADAD672CE10D52B3BEB3774E80E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-wakaTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>F9E20089AE43241F51D52C49F2EEA5FC</key>
 		<dict>
 			<key>children</key>
@@ -14021,6 +14396,70 @@
 			<string>../Target Support Files/PermissionScope</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA056CB74B6A51EA4B01C190ACAF9395</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F5DC266AADD5D8CE84CFEEE112458848</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-wakaTests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-wakaTests/Pods-wakaTests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_wakaTests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>FA8FDCB1130F927EF2BCEEE4553D56C5</key>
 		<dict>
@@ -14279,6 +14718,45 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>FE07856275F8506130D9808892EADBCC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0399A4631C2D5E73F6FBF3B44B1FA939</string>
+				<string>6109EAF395E11DDF06AB9A04D9101E5B</string>
+				<string>006CCAF6D3AE715EEF9D07F744EAEE14</string>
+				<string>5128E48C65D7481DE62119C28C670BB9</string>
+				<string>64EC95BFEA287C0651124993CFBCAB07</string>
+				<string>7DA028A6740882D3CE8627D6F99ECD67</string>
+				<string>0682A44DF8CBF90E6D3D616425B8D6E7</string>
+				<string>C6E159920153DE2FD375AC0905AFABE5</string>
+				<string>F5DC266AADD5D8CE84CFEEE112458848</string>
+				<string>F98F7ADAD672CE10D52B3BEB3774E80E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-wakaTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-wakaTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FE430CD87B52D2FD053CF2149AB59965</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_wakaTests.framework</string>
+			<key>path</key>
+			<string>Pods_wakaTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>FEA0125C63A6DAF24403AECC436C7A4B</key>
 		<dict>

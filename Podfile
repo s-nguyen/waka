@@ -10,7 +10,9 @@ target 'waka' do
 end
 
 target 'wakaTests' do
-
+    pod 'AudioKit', '~> 2.3'
+    pod 'PermissionScope'
+    pod 'Chronos-Swift'
 end
 
 target 'wakaUITests' do
