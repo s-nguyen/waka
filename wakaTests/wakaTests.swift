@@ -59,6 +59,54 @@ class wakaTests: XCTestCase {
     //FilterTest
     func testFilter() {
         //Verify Functionality
+        
+        //pickerView test
+        XCTAssertEqual(filterVC.filter.filterNum, 0) // default value
+        filterVC.pickerView.element.adjustToPickerWheelValue("Echo")
+        XCTAssertEqual(filterVC.filter.filterNum, 1) // echo selecting
+        filterVC.pickerView.element.adjustToPickerWheelValue("Reverb")
+        XCTAssertEqual(filterVC.filter.filterNum, 2) // reverb selecting
+        
+        /*
+        // reference https://www.raywenderlich.com/61419/ios-ui-testing-with-kif
+         
+        //speed stepper test
+        XCTAssertEqual(filterVC.filter.speed, 1.0) // default value
+        //increase once
+        XCTAssertEqual(filterVC.filter.speed, 1.5) // increase speed by 0.5
+        //increase once
+        XCTAssertEqual(filterVC.filter.speed, 2.0) // increase speed by 0.5
+        //decrease once
+        XCTAssertEqual(filterVC.filter.speed, 1.5) // decrease speed by 0.5
+        
+        //pitch stepper test
+        XCTAssertEqual(filterVC.filter.pitch, 0.0) // default value
+        //increase once
+        XCTAssertEqual(filterVC.filter.pitch, 1.0) // increase pitch by 1
+        //increase once
+        XCTAssertEqual(filterVC.filter.pitch, 2.0) // increase pitch by 1
+        //decrease once
+        XCTAssertEqual(filterVC.filter.pitch, 1.0) // decrease pitch by 1
+        */
+        
+        //play button enablity test
+        XCTAssertEqual(filterVC.playButton.enabled, false) // default value
+        
+        //recording test
+        XCTAssertEqual(filterVC.filter.recording, false) // default value
+        filterVC.recordButton.sendActionsForControlEvents(.TouchUpInside)
+        XCTAssertEqual(filterVC.filter.recording, true) // recording state
+        filterVC.recordButton.sendActionsForControlEvents(.TouchUpInside)
+        XCTAssertEqual(filterVc.filter.recording, false) // recording done
+        
+        //playing test
+        XCTAssertEqual(filterVC.filter.playing, false) // default value
+        filterVC.playButton.sendActionsForControlEvents(.TouchUpInside)
+        XCTAssertEqual(filterVC.filter.playing, true) // playing
+        filterVC.playButton.sendActionsForControlEvents(.TouchUpInside)
+        XCTAssertEqual(filterVC.filter.playing, false) // playing done
+        
+        
     }
     
     
