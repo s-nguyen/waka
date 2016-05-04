@@ -63,6 +63,11 @@ class wakaTests: XCTestCase {
         XCTAssertFalse(metronomeVC.sixteenthButton.enabled)
     }
     
+    func testCentCalculations() {
+        XCTAssertEqual(tunerVC.calculateCents(300, dist: 0), 0)
+        XCTAssertEqual(tunerVC.calculateCents(300, dist: 10), 1200*log2(300/290))
+    }
+    
     //Tuner Test
     
     //FilterTest

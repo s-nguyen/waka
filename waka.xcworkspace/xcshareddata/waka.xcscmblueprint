@@ -1,30 +1,35 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "fcd91762-81a9-4844-bf26-3bcc79886f0e++6781+++14A1D7E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309" : {
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309+++BDEC530" : {
+
+    },
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++6781+++14A1D7E" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309" : 0
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309+++BDEC530" : 0,
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++6781+++14A1D7E" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9133CDB6-1333-4EE2-864D-518DBAED91DF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309" : "Final\/"
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309+++BDEC530" : "Final\/",
+    "fcd91762-81a9-4844-bf26-3bcc79886f0e++6781+++14A1D7E" : "Final\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "waka",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "waka.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/s-nguyen\/waka.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309"
-    },
-    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.engr.arizona.edu\/svn\/jms\/ece473-573-2016S",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fcd91762-81a9-4844-bf26-3bcc79886f0e++6781+++14A1D7E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/s-nguyen\/waka.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fcd91762-81a9-4844-bf26-3bcc79886f0e++7309+++BDEC530"
     }
   ]
 }

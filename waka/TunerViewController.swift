@@ -86,6 +86,10 @@ class TunerViewController: UIViewController, TunerDelegate {
         }
     }
     
+    func calculateCents(freq: Float, dist: Float) -> Float {
+        let desiredFrequency = freq - dist
+        return 1200*log2(freq/desiredFrequency)
+    }
     
     func tunerDidUpdate(wakaTuner: Tuner, output: TunerOutput) {
         //Get Data from here. output.sutff
@@ -98,8 +102,9 @@ class TunerViewController: UIViewController, TunerDelegate {
             tunerLabel.text = ""
         }
         else if(output.amplitude >= 0.010 && !generating){
-            let desiredFrequency = output.frequency - output.distance
-            cents = 1200*log2(output.frequency/desiredFrequency)
+            
+            cents = calculateCents(output.frequency, dist: output.distance)
+            
             //When sound is detected
             tunerLabel.text = output.pitch
             

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FA7F2B9A266DCA6E5FE7B1DA'
+               BlueprintIdentifier = 'BB85A97DB98A07AEDA660407'
                BlueprintName = 'Pods-waka'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_waka.framework'>
